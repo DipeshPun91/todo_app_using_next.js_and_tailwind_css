@@ -22,9 +22,12 @@ export default function Header() {
 
         <div className="hidden md:flex items-center md:ml-auto">
           <nav className="flex flex-wrap items-center text-base justify-center">
-            <a className="mr-5 relative hover:text-accent after:content-[''] after:block after:w-full after:h-[2px] after:bg-accent after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300">
+            <Link
+              href="/todo"
+              className="mr-5 relative hover:text-accent after:content-[''] after:block after:w-full after:h-[2px] after:bg-accent after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform after:duration-300"
+            >
               Dashboard
-            </a>
+            </Link>
           </nav>
           <button className="inline-flex items-center justify-center text-white whitespace-nowrap rounded-full bg-accent font-semibold h-11 px-6 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent transition-all duration-200">
             Get Started
