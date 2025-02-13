@@ -114,7 +114,6 @@ export default function Todo() {
           ))}
         </div>
 
-        {/* Todo List */}
         <ul className="space-y-4">
           {filteredTodos.map((todo, index) => (
             <li
@@ -157,7 +156,6 @@ export default function Todo() {
                 )}
               </div>
 
-              {/* Action Buttons */}
               <div className="flex items-center gap-2">
                 {editIndex === index ? (
                   <button
